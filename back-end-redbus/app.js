@@ -74,9 +74,8 @@ const connect = () => {
   );
 };
 
-
-const port = process.env.PORT || 3020;
-let host = process.env.HOST;
+const port = process.env.PORT || 5000;
+const host = '0.0.0.0';
 
 const start = async () => {
   await connect().then(()=>console.log("Database connected")).catch((err)=>console.log(err));
